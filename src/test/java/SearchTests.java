@@ -7,9 +7,9 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
     @Test
     void successfulSearchTest() {
-        open("https://www.google.com/");
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://selenide.org"));
+        open("https://www.duckduckgo.com/");
+        $("[name=q]").setValue("Курсы тестировщиков qa guru").pressEnter();
+        $("[.Wo6ZAEmESLNUuWBkbMxx]").shouldHave(text("https://qa.guru"));
     }
 
 }
